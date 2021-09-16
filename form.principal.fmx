@@ -1,0 +1,167 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  ClientHeight = 670
+  ClientWidth = 891
+  Fill.Color = xFFE0E0E0
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Layout2: TLayout
+    Align = MostLeft
+    Size.Width = 416.000000000000000000
+    Size.Height = 670.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object memJson: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      OnChangeTracking = memJsonChangeTracking
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Top = -2.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 396.000000000000000000
+      Size.Height = 489.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 392.000000000000000000
+      Viewport.Height = 485.000000000000000000
+    end
+    object Rectangle3: TRectangle
+      Align = Top
+      Fill.Color = claDodgerblue
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 123.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      object Text2: TText
+        Align = Client
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 396.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Enter with your JSON'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = xFFE6E6E6
+      end
+    end
+    object Layout1: TLayout
+      Align = MostTop
+      Size.Width = 416.000000000000000000
+      Size.Height = 121.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Text3: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Unit name'
+        TextSettings.HorzAlign = Leading
+      end
+      object Text4: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'JSON mother name'
+        TextSettings.HorzAlign = Leading
+      end
+      object edtUnitName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 0
+        Position.X = 8.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 401.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'my.unit'
+        OnExit = edtUnitNameExit
+      end
+      object edtClassRoot: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 1
+        Position.X = 8.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 401.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'TRoot'
+        OnExit = edtClassRootExit
+      end
+    end
+  end
+  object lyClass: TLayout
+    Align = Client
+    Enabled = False
+    Size.Width = 475.000000000000000000
+    Size.Height = 670.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object memClass: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      ReadOnly = True
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Top = -2.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 455.000000000000000000
+      Size.Height = 610.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 451.000000000000000000
+      Viewport.Height = 606.000000000000000000
+    end
+    object rcClassTittle: TRectangle
+      Align = Top
+      Fill.Color = claDodgerblue
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 459.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      object Text1: TText
+        Align = Client
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 455.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Preview Delphi unit'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = xFFE6E6E6
+      end
+    end
+  end
+end
